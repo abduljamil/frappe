@@ -170,10 +170,15 @@ frappe.router = {
 		} else {
 			standard_route = ['List', doctype_route.doctype, frappe.utils.to_title_case(route[2])];
 <<<<<<< HEAD
+<<<<<<< HEAD
 			if (route[3]) {
 				// calendar / kanban / dashboard / folder name
 				standard_route.push(...route.splice(3, route.length));
 			}
+=======
+			// calendar / kanban / dashboard / folder
+			if (route[3]) standard_route.push(...route.slice(3, route.length));
+>>>>>>> fed25c392affcb051d4eb582a33e3ff28aef2253
 =======
 			// calendar / kanban / dashboard / folder
 			if (route[3]) standard_route.push(...route.slice(3, route.length));
