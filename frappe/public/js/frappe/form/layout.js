@@ -250,8 +250,21 @@ frappe.ui.form.Layout = Class.extend({
 			// collapse sections
 			this.refresh_section_collapse();
 		}
+<<<<<<< Updated upstream
 	},
 
+=======
+
+		if (document.activeElement) {
+			document.activeElement.focus();
+	
+			if (document.activeElement.tagName == 'INPUT') {
+				document.activeElement.select();
+			}
+		}
+	},
+
+>>>>>>> Stashed changes
 	refresh_sections: function() {
 		// hide invisible sections
 		this.wrapper.find(".form-section:not(.hide-control)").each(function() {
@@ -263,11 +276,15 @@ frappe.ui.form.Layout = Class.extend({
 				section.addClass("empty-section");
 			}
 		});
+	},
 
+<<<<<<< Updated upstream
 		this.frm && this.frm.dashboard.refresh();
 
 	},
 
+=======
+>>>>>>> Stashed changes
 	refresh_fields: function (fields) {
 		let fieldnames = fields.map((field) => {
 			if (field.fieldname) return field.fieldname;
