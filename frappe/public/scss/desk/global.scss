@@ -445,7 +445,6 @@ kbd {
 	color: var(--text-muted);
 }
 
-<<<<<<< Updated upstream
 /*rtl styles*/
 
 .frappe-rtl {
@@ -459,8 +458,6 @@ kbd {
 	}
 }
 
-=======
->>>>>>> Stashed changes
 /* broken image styling */
 
 img.no-image {
@@ -572,15 +569,3 @@ details > summary:focus {
 // 	font-family: 'Octicons';
 // 	content: "\f00b";
 // }
-
-/*rtl:raw:
-.dropdown-menu {
-	right: auto;
-}
-.popover {
-	right: auto;
-}
-.chart-container {
-	direction: ltr;
-}
-*/
