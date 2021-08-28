@@ -64,6 +64,8 @@ frappe.Application = Class.extend({
 			}
 		});
 
+		this.set_rtl();
+
 		// page container
 		this.make_page_container();
 		this.set_route();
@@ -487,7 +489,6 @@ frappe.Application = Class.extend({
 		}, 100);
 	},
 
-<<<<<<< Updated upstream
 	set_rtl: function() {
 		if (frappe.utils.is_rtl()) {
 			var ls = document.createElement('link');
@@ -499,8 +500,6 @@ frappe.Application = Class.extend({
 		}
 	},
 
-=======
->>>>>>> Stashed changes
 	show_change_log: function() {
 		var me = this;
 		let change_log = frappe.boot.change_log;
