@@ -65,6 +65,7 @@ frappe.ui.form.ControlData = frappe.ui.form.ControlInput.extend({
 		if (this.df.options == 'URL') {
 			this.setup_url_field();
 		}
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 
@@ -72,6 +73,8 @@ frappe.ui.form.ControlData = frappe.ui.form.ControlInput.extend({
 			this.setup_barcode_field();
 		}
 >>>>>>> Stashed changes
+=======
+>>>>>>> ce3436d54ee408e2846074099465007d8f1daf0c
 	},
 	setup_url_field: function() {
 		this.$wrapper.find('.control-input').append(
@@ -117,6 +120,7 @@ frappe.ui.form.ControlData = frappe.ui.form.ControlInput.extend({
 			}, 500);
 		});
 	},
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 	setup_barcode_field: function() {
@@ -156,6 +160,8 @@ frappe.ui.form.ControlData = frappe.ui.form.ControlInput.extend({
 		});
 	},
 >>>>>>> Stashed changes
+=======
+>>>>>>> ce3436d54ee408e2846074099465007d8f1daf0c
 	bind_change_event: function() {
 		const change_handler = e => {
 			if (this.change) this.change(e);

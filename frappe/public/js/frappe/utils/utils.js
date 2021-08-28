@@ -956,6 +956,7 @@ Object.assign(frappe.utils, {
 
 		return $el;
 	},
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 	
@@ -973,6 +974,8 @@ Object.assign(frappe.utils, {
 		}
 	},
 >>>>>>> Stashed changes
+=======
+>>>>>>> ce3436d54ee408e2846074099465007d8f1daf0c
 
 	get_browser() {
 		let ua = navigator.userAgent;

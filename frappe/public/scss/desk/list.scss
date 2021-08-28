@@ -58,7 +58,11 @@
 }
 
 .list-row {
+<<<<<<< HEAD
 	padding: 15px 15px 15px 0px;
+=======
+	padding: 15px;
+>>>>>>> ce3436d54ee408e2846074099465007d8f1daf0c
 	height: 45px;
 	cursor: pointer;
 	transition: color 0.2s;
@@ -130,15 +134,21 @@
 			margin-left: 5px;
 		}
 	}
+<<<<<<< HEAD
 
 	.select-like {
 		padding: 15px 0px 15px 15px;
 	}
+=======
+>>>>>>> ce3436d54ee408e2846074099465007d8f1daf0c
 }
 
 .list-row-head {
 	@extend .list-row;
+<<<<<<< HEAD
 	padding: 15px;
+=======
+>>>>>>> ce3436d54ee408e2846074099465007d8f1daf0c
 	cursor: default;
 
 	.list-subject {
@@ -205,10 +215,13 @@ input.list-check-all, input.list-row-checkbox {
 	--checkbox-right-margin: calc(var(--checkbox-size) / 2 + #{$level-margin-right});
 }
 
+<<<<<<< HEAD
 .render-list-checkbox {
 	margin-left: 15px;
 }
 
+=======
+>>>>>>> ce3436d54ee408e2846074099465007d8f1daf0c
 .filterable {
 	cursor: pointer;
 }
@@ -392,6 +405,33 @@ input.list-check-all, input.list-row-checkbox {
 	}
 }
 
+<<<<<<< HEAD
+=======
+.frappe-rtl {
+	.restricted-button {
+		margin: auto auto auto 5px;
+		direction: ltr;
+	}
+}
+
+// 	img {
+// 		max-height: 100%;
+// 	}
+// }
+
+// .inbox-attachment, .inbox-link {
+// 	margin-right: 7px;
+// }
+
+// .select-inbox {
+// 	padding: 30px 30px;
+// }
+
+// .inbox-value {
+// 	padding-top: 2px;
+// }
+
+>>>>>>> ce3436d54ee408e2846074099465007d8f1daf0c
 // map
 .map-view-container {
 	display: flex;

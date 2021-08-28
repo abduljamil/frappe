@@ -250,6 +250,7 @@ frappe.ui.form.Layout = Class.extend({
 			// collapse sections
 			this.refresh_section_collapse();
 		}
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 	},
 
@@ -265,6 +266,10 @@ frappe.ui.form.Layout = Class.extend({
 	},
 
 >>>>>>> Stashed changes
+=======
+	},
+
+>>>>>>> ce3436d54ee408e2846074099465007d8f1daf0c
 	refresh_sections: function() {
 		// hide invisible sections
 		this.wrapper.find(".form-section:not(.hide-control)").each(function() {
@@ -276,15 +281,22 @@ frappe.ui.form.Layout = Class.extend({
 				section.addClass("empty-section");
 			}
 		});
+<<<<<<< HEAD
 	},
 
 <<<<<<< Updated upstream
+=======
+
+>>>>>>> ce3436d54ee408e2846074099465007d8f1daf0c
 		this.frm && this.frm.dashboard.refresh();
 
 	},
 
+<<<<<<< HEAD
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> ce3436d54ee408e2846074099465007d8f1daf0c
 	refresh_fields: function (fields) {
 		let fieldnames = fields.map((field) => {
 			if (field.fieldname) return field.fieldname;

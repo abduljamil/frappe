@@ -40,6 +40,7 @@ frappe.ui.FieldGroup = frappe.ui.form.Layout.extend({
 				this.catch_enter_as_submit();
 			}
 
+<<<<<<< HEAD
 			$(this.wrapper).find('input, select').on(
 				'change awesomplete-selectcomplete',
 				() => {
@@ -50,6 +51,16 @@ frappe.ui.FieldGroup = frappe.ui.form.Layout.extend({
 					]);
 				}
 			);
+=======
+			$(this.wrapper).find('input, select').on('change', () => {
+				this.dirty = true;
+
+				frappe.run_serially([
+					() => frappe.timeout(0.1),
+					() => me.refresh_dependency()
+				]);
+			});
+>>>>>>> ce3436d54ee408e2846074099465007d8f1daf0c
 
 		}
 	},

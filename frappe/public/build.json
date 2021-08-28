@@ -39,7 +39,25 @@
 	"js/bootstrap-4-web.min.js": "website/js/bootstrap-4.js",
 	"js/control.min.js": [
 		"node_modules/air-datepicker/dist/js/datepicker.min.js",
+<<<<<<< HEAD
 		"public/js/frappe/form/controls/datepicker_i18n.js",
+=======
+		"node_modules/air-datepicker/dist/js/i18n/datepicker.cs.js",
+		"node_modules/air-datepicker/dist/js/i18n/datepicker.da.js",
+		"node_modules/air-datepicker/dist/js/i18n/datepicker.de.js",
+		"node_modules/air-datepicker/dist/js/i18n/datepicker.en.js",
+		"node_modules/air-datepicker/dist/js/i18n/datepicker.es.js",
+		"node_modules/air-datepicker/dist/js/i18n/datepicker.fi.js",
+		"node_modules/air-datepicker/dist/js/i18n/datepicker.fr.js",
+		"node_modules/air-datepicker/dist/js/i18n/datepicker.hu.js",
+		"node_modules/air-datepicker/dist/js/i18n/datepicker.nl.js",
+		"node_modules/air-datepicker/dist/js/i18n/datepicker.pl.js",
+		"node_modules/air-datepicker/dist/js/i18n/datepicker.pt-BR.js",
+		"node_modules/air-datepicker/dist/js/i18n/datepicker.pt.js",
+		"node_modules/air-datepicker/dist/js/i18n/datepicker.ro.js",
+		"node_modules/air-datepicker/dist/js/i18n/datepicker.sk.js",
+		"node_modules/air-datepicker/dist/js/i18n/datepicker.zh.js",
+>>>>>>> ce3436d54ee408e2846074099465007d8f1daf0c
 		"public/js/frappe/ui/capture.js",
 		"public/js/frappe/form/controls/control.js"
 	],
@@ -69,6 +87,14 @@
 		"node_modules/plyr/dist/plyr.css",
 		"public/scss/desk.scss"
 	],
+<<<<<<< HEAD
+=======
+	"css/frappe-rtl.css": [
+		"public/css/bootstrap-rtl.css",
+		"public/css/desk-rtl.css",
+		"public/css/report-rtl.css"
+	],
+>>>>>>> ce3436d54ee408e2846074099465007d8f1daf0c
 	"css/printview.css": [
 		"public/css/bootstrap.css",
 		"public/scss/print.scss"
@@ -194,8 +220,12 @@
 		"public/js/frappe/ui/datatable.js",
 		"public/js/frappe/ui/driver.js",
 		"public/js/frappe/ui/plyr.js",
+<<<<<<< HEAD
 		"public/js/frappe/barcode_scanner/index.js",
 		"public/js/frappe/scanner"
+=======
+		"public/js/frappe/barcode_scanner/index.js"
+>>>>>>> ce3436d54ee408e2846074099465007d8f1daf0c
 	],
 	"js/form.min.js": [
 		"public/js/frappe/form/templates/**.html",

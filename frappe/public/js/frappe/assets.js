@@ -9,6 +9,7 @@ frappe.require = function(items, callback) {
 	if(typeof items === "string") {
 		items = [items];
 	}
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 	frappe.assets.execute(items, callback);
 =======
@@ -19,6 +20,9 @@ frappe.require = function(items, callback) {
 		});
 	});
 >>>>>>> Stashed changes
+=======
+	frappe.assets.execute(items, callback);
+>>>>>>> ce3436d54ee408e2846074099465007d8f1daf0c
 };
 
 frappe.assets = {
@@ -169,6 +173,7 @@ frappe.assets = {
 			frappe.dom.set_style(txt);
 		}
 	},
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 
@@ -180,4 +185,6 @@ frappe.assets = {
 		return `<link href="${path}" rel="stylesheet">`;
 	}
 >>>>>>> Stashed changes
+=======
+>>>>>>> ce3436d54ee408e2846074099465007d8f1daf0c
 };

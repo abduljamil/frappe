@@ -1,13 +1,21 @@
 .navbar .navbar-search-icon{
   right: auto;
+<<<<<<< HEAD
   left: 24px;
+=======
+  left: 40px;
+>>>>>>> ce3436d54ee408e2846074099465007d8f1daf0c
 }
 .navbar > .container > .navbar-header{
   float: right !important;
 }
 body[data-sidebar="0"] .navbar-home {
   margin-left: auto !important;
+<<<<<<< HEAD
   margin-right: 15px !important;
+=======
+  margin-right: 48px !important;
+>>>>>>> ce3436d54ee408e2846074099465007d8f1daf0c
 }
 .navbar-desk ~ ul > li {
   float: right !important;

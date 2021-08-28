@@ -152,7 +152,10 @@ function get_version_comment(version_doc, text) {
 		let unlinked_content = "";
 
 		try {
+<<<<<<< HEAD
 			text += '</>';
+=======
+>>>>>>> ce3436d54ee408e2846074099465007d8f1daf0c
 			Array.from($(text)).forEach(element => {
 				if ($(element).is('a')) {
 					version_comment += unlinked_content ? frappe.utils.get_form_link('Version', version_doc.name, true, unlinked_content) : "";

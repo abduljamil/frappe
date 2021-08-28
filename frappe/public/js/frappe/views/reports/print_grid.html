@@ -11,7 +11,10 @@
 	<!-- heading -->
 	<thead>
 		<tr>
+<<<<<<< HEAD
 		<th> # </th>
+=======
+>>>>>>> ce3436d54ee408e2846074099465007d8f1daf0c
 		{% for col in columns %}
 			{% if col.name && col._id !== "_check" %}
 			<th
@@ -31,9 +34,12 @@
 	<tbody>
 		{% for row in data %}
 			<tr style="height: 30px">
+<<<<<<< HEAD
 			<td {% if row.bold == 1 %} style="font-weight: bold" {% endif %}>
 				<span> {{ row._index + 1 }} </span>
 			</td>
+=======
+>>>>>>> ce3436d54ee408e2846074099465007d8f1daf0c
 			{% for col in columns %}
 				{% if col.name && col._id !== "_check" %}
 

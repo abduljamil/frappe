@@ -4,6 +4,10 @@
 	background-color: white;
 	font-size: var(--text-sm);
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> ce3436d54ee408e2846074099465007d8f1daf0c
 #navbar-breadcrumbs {
 	margin-left: var(--margin-md);
 	font-size: var(--text-sm);
@@ -11,7 +15,11 @@
 		font-size: var(--text-md);
 		margin-right: 10px;
 		&:before {
+<<<<<<< HEAD
 			content: var(--right-arrow-svg) #{"/*!rtl:var(--left-arrow-svg);*/"};
+=======
+			content: var(--right-arrow-svg);
+>>>>>>> ce3436d54ee408e2846074099465007d8f1daf0c
 			display: inline-block;
 			margin-right: 10px;
 		}

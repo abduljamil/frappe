@@ -64,6 +64,11 @@ frappe.Application = Class.extend({
 			}
 		});
 
+<<<<<<< HEAD
+=======
+		this.set_rtl();
+
+>>>>>>> ce3436d54ee408e2846074099465007d8f1daf0c
 		// page container
 		this.make_page_container();
 		this.set_route();
@@ -487,7 +492,10 @@ frappe.Application = Class.extend({
 		}, 100);
 	},
 
+<<<<<<< HEAD
 <<<<<<< Updated upstream
+=======
+>>>>>>> ce3436d54ee408e2846074099465007d8f1daf0c
 	set_rtl: function() {
 		if (frappe.utils.is_rtl()) {
 			var ls = document.createElement('link');
@@ -499,8 +507,11 @@ frappe.Application = Class.extend({
 		}
 	},
 
+<<<<<<< HEAD
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> ce3436d54ee408e2846074099465007d8f1daf0c
 	show_change_log: function() {
 		var me = this;
 		let change_log = frappe.boot.change_log;
