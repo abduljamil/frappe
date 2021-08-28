@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html data-theme="{{ desk_theme.lower() }}">
+<html data-theme="{{ desk_theme.lower() }}" dir={{ layout_direction }} lang="{{ lang }}">
 	<head>
 		<!-- Chrome, Firefox OS and Opera -->
 		<meta name="theme-color" content="#0089FF">
@@ -15,11 +15,11 @@
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-status-bar-style" content="white">
 		<meta name="mobile-web-app-capable" content="yes">
-		<title>Frappe</title>
+		<title>PCW Health Care</title>
 		<link rel="shortcut icon"
-			href="{{ favicon or "/assets/frappe/images/frappe-favicon.svg" }}" type="image/x-icon">
+			href="{{ favicon or "/assets/frappe/images/logo.png" }}" type="image/x-icon">
 		<link rel="icon"
-			href="{{ favicon or "/assets/frappe/images/frappe-favicon.svg" }}" type="image/x-icon">
+			href="{{ favicon or "/assets/frappe/images/logo.png" }}" type="image/x-icon">
 		{% for include in include_css -%}
 		<link type="text/css" rel="stylesheet" href="{{ include }}?ver={{ build_version }}">
 		{%- endfor -%}
@@ -27,7 +27,7 @@
 	<body>
 		{% include "public/icons/timeless/symbol-defs.svg" %}
 		<div class="centered splash">
-			<img src="{{ splash_image or "/assets/frappe/images/frappe-framework-logo.png" }}"
+			<img src="{{ splash_image or "/assets/frappe/images/logo.png" }}"
 				style="max-width: 100px; max-height: 100px;">
 		</div>
 		<div class="main-section">

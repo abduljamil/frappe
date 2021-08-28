@@ -10,6 +10,10 @@ from frappe.modules import get_doc_path
 from frappe.core.doctype.access_log.access_log import make_access_log
 from frappe.utils import cint, sanitize_html, strip_html
 from six import string_types
+<<<<<<< Updated upstream
+=======
+from frappe.utils.jinja import is_rtl
+>>>>>>> Stashed changes
 
 no_cache = 1
 
@@ -48,7 +52,8 @@ def get_context(context):
 		"css": get_print_style(frappe.form_dict.style, print_format),
 		"comment": frappe.session.user,
 		"title": doc.get(meta.title_field) if meta.title_field else doc.name,
-		"has_rtl": True if frappe.local.lang in ["ar", "he", "fa", "ps"] else False
+		"lang": frappe.local.lang,
+		"layout_direction": "rtl" if is_rtl() else "ltr"
 	}
 
 def get_print_format_doc(print_format_name, meta):
