@@ -1,7 +1,15 @@
-<!DOCTYPE html>
+<!>
+<!-- Built on Frappe. https://frappeframework.com/ -->
 <html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="generator" content="frappe">
 
-<<<<<<< Updated upstream
+	{% block meta_block %}
+		{% include "templates/includes/meta_block.html" %}
+	{% endblock %}
+
 	<title>{% block title %}{{ title | striptags }}{% endblock %}</title>
 
 	{% block favicon %}
@@ -51,95 +59,31 @@
 		window.show_language_picker = {{ show_language_picker }};
 		window.is_chat_enabled = {{ chat_enable }};
 	</script>
-=======
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>PCW Health Care</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-
-  <!-- Favicons -->
-  <link href="/assets/frappe/Gp/assets/img/logo.png" rel="icon">
-  <link href="/assets/frappe/Gp/assets/img/logo.png" rel="apple-touch-icon">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="/assets/frappe/Gp/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="/assets/frappe/Gp/assets/vendor/icofont/icofont.min.css" rel="stylesheet">
-  <link href="/assets/frappe/Gp/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="/assets/frappe/Gp/assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="/assets/frappe/Gp/assets/vendor/venobox/venobox.css" rel="stylesheet">
-  <link href="/assets/frappe/Gp/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="/assets/frappe/Gp/assets/vendor/aos/aos.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="/assets/frappe/Gp/assets/css/style.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: Gp - v2.2.1
-  * Template URL: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
->>>>>>> Stashed changes
 </head>
+<body frappe-session-status="{{ 'logged-in' if frappe.session.user != 'Guest' else 'logged-out'}}" data-path="{{ path | e }}" {%- if template and template.endswith('.md') %} frappe-content-type="markdown" {%- endif %} class="{{ body_class or ''}}">
+	{% include "public/icons/timeless/symbol-defs.svg" %}
+	{%- block banner -%}
+		{% include "templates/includes/banner_extension.html" ignore missing %}
 
-<body>
+		{% if banner_html -%}
+		{{ banner_html or "" }}
+		{%- endif %}
+	{%- endblock -%}
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top ">
-    <div class="container d-flex align-items-center justify-content-between">
+	{%- block navbar -%}
+		{{ web_block(
+			navbar_template or 'Standard Navbar',
+			values=_context_dict,
+			add_container=0,
+			add_top_padding=0,
+			add_bottom_padding=0,
+		) }}
+	{%- endblock -%}
 
-      <h1 class="logo"><a href="index.html">PCW Health Care<span>.</span></a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo"><img src="/assets/frappe/Gp/assets/img/logo.png" alt="" class="img-fluid"></a>-->
-
-      <nav class="nav-menu d-none d-lg-block">
-        <ul>
-          <li class="active"><a href="index.html">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Products</a></li>
-          <li><a href="#team">Team</a></li>
-          <li class="drop-down"><a href="">Drop Down</a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="drop-down"><a href="#">Deep Drop Down</a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-            </ul>
-          </li>
-          <li><a href="#contact">Contact</a></li>
-
-        </ul>
-      </nav><!-- .nav-menu -->
-
-      <a href="http://0.0.0.0:8000/login#login" class="get-started-btn scrollto">Login</a>
-
-    </div>
-  </header><!-- End Header -->
-
-<div class="center" >
-	<style media="screen">
-
-	</style>
 	{% block content %}
+		{{ content }}
 	{% endblock %}
 
-<<<<<<< Updated upstream
 	{%- block footer -%}
 		{{ web_block(
 			footer_template or 'Standard Footer',
@@ -168,103 +112,5 @@
 	{%- endblock %}
 	<!-- csrf_token -->
 	{%- block body_include %}{{ body_include or "" }}{% endblock -%}
-=======
-</div>
-
-
-
-	<footer id="footer">
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
-
-          <div class="col-lg-3 col-md-6">
-            <div class="footer-info">
-              <h3>PCW Health Care<span>.</span></h3>
-              <p>
-                9-KM Lahore - Sheikhupura Road <br>
-                Lahore Pakistan<br><br>
-                <strong>Phone:</strong> +92 - 42 - 111 111 105<br>
-                <strong>Email:</strong> info@example.com<br>
-              </p>
-              <div class="social-links mt-3">
-                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-md-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Services</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-4 col-md-6 footer-newsletter">
-            <h4>Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
-            </form>
-
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong><span>PCW Health Care</span></strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/ -->
-        Designed by <a href="https://satistrum.com/">Satistrum</a>
-      </div>
-    </div>
-  </footer><!-- End Footer -->
-
-  <a href="#" class="back-to-top"><i class="ri-arrow-up-line"></i></a>
-  <div id="preloader"></div>
-
-  <!-- Vendor JS Files -->
-  <script src="/assets/frappe/Gp/assets/vendor/jquery/jquery.min.js"></script>
-  <script src="/assets/frappe/Gp/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="/assets/frappe/Gp/assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-  <script src="/assets/frappe/Gp/assets/vendor/php-email-form/validate.js"></script>
-  <script src="/assets/frappe/Gp/assets/vendor/owl.carousel/owl.carousel.min.js"></script>
-  <script src="/assets/frappe/Gp/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="/assets/frappe/Gp/assets/vendor/venobox/venobox.min.js"></script>
-  <script src="/assets/frappe/Gp/assets/vendor/waypoints/jquery.waypoints.min.js"></script>
-  <script src="/assets/frappe/Gp/assets/vendor/counterup/counterup.min.js"></script>
-  <script src="/assets/frappe/Gp/assets/vendor/aos/aos.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="/assets/frappe/Gp/assets/js/main.js"></script>
-
->>>>>>> Stashed changes
 </body>
-
 </html>
