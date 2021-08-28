@@ -7,17 +7,20 @@
 	<meta name="generator" content="frappe">
 
 	<link type="text/css" rel="stylesheet" href="/assets/css/printview.css">
-
+	{%- if has_rtl -%}
 		<link type="text/css" rel="stylesheet" href="assets/css/frappe-rtl.css">
+	{%- endif -%}
+
+	{{ include_style("printview.css") }}
 
 	<style>
-
+	{{ css }}
 	</style>
 </head>
 <body>
 	<div class="print-format-gutter">
 	    <div class="print-format">
-
+		{{ body }}
 	    </div>
 	</div>
 	<script>
@@ -35,5 +38,7 @@
 		});
 	</script>
 </body>
-
+{%- if comment -%}
+<!-- {{ comment }} -->
+{%- endif -%}
 </html>
