@@ -66,7 +66,7 @@ h1, h2, h3, h4, h5, h6 {
   bottom: 0;
   z-index: 9999;
   overflow: hidden;
-  background: #151515;
+  background: #ffffff;
 }
 
 #preloader:before {
@@ -74,9 +74,10 @@ h1, h2, h3, h4, h5, h6 {
   position: fixed;
   top: calc(50% - 0px);
   left: calc(50% - 30px);
-  border: 6px solid #ffc451;
-  border-top-color: #151515;
-  border-bottom-color: #151515;
+  border: 6px solid rgba(0, 112, 185, 0.84);
+  /* #ffc451; */
+  border-top-color: #ffffff;
+  border-bottom-color: #ffffff;
   border-radius: 50%;
   width: 60px;
   height: 60px;
@@ -123,6 +124,7 @@ h1, h2, h3, h4, h5, h6 {
 #header.header-scrolled, #header.header-inner-pages {
   background: rgba(0, 0, 0, 0.8);
   background: rgba(0, 112, 185, 0.84);
+}
 }
 
 #header .logo {
@@ -175,7 +177,6 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 15px;
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
-  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 }
 
 .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
