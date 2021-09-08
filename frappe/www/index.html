@@ -74,8 +74,11 @@
 
         </ul>
       </nav><!-- .nav-menu -->
-
+	{% if frappe.session.user == 'Guest' %}
       <a href="http://pcwhealthcare.com/login#login" class="get-started-btn scrollto">Login</a>
+  {% else %}
+  <a href="http://pcwhealthcare.com/app" class="get-started-btn scrollto">App</a>
+{% endif %}
 
     </div>
   </header><!-- End Header -->
@@ -439,7 +442,7 @@
         <div class="text-center">
           <h3>Call To Action</h3>
           <p></p>
-          <a class="cta-btn" href="http://pcwhealthcare.com/">Show More Products</a>
+          <a class="cta-btn" href="http://pcwhealthcare.com/products">Show More Products</a>
         </div>
 
       </div>
