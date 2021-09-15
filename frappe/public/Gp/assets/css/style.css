@@ -653,17 +653,20 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Services
+# Customers
 --------------------------------------------------------------*/
-.services .icon-box {
+.customers .icon-box {
   text-align: center;
   border: 1px solid #ebebeb;
-  padding: 80px 20px;
+/*  padding: 80px 20px;*/
+padding-right: 60px;
+padding-left: 60px;
+padding-top: 40px;
   transition: all ease-in-out 0.3s;
   background: #fff;
 }
 
-.services .icon-box .icon {
+.customers .icon-box .icon {
   margin: 0 auto;
   width: 64px;
   height: 64px;
@@ -676,34 +679,34 @@ section {
   transition: 0.3s;
 }
 
-.services .icon-box .icon i {
+.customers .icon-box .icon i {
   color: #151515;
   font-size: 28px;
   transition: ease-in-out 0.3s;
 }
 
-.services .icon-box h4 {
+.customers .icon-box h4 {
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 24px;
 }
 
-.services .icon-box h4 a {
+.customers .icon-box h4 a {
   color: #151515;
   transition: ease-in-out 0.3s;
 }
 
-.services .icon-box h4 a:hover {
+.customers .icon-box h4 a:hover {
   color: #ffc451;
 }
 
-.services .icon-box p {
+.customers .icon-box p {
   line-height: 24px;
   font-size: 14px;
   margin-bottom: 0;
 }
 
-.services .icon-box:hover {
+.customers .icon-box:hover {
   border-color: #fff;
   box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
   transform: translateY(-10px);
@@ -1577,4 +1580,119 @@ section {
   text-align: center;
   font-size: 13px;
   color: #fff;
+}
+
+/*--------------------------------------------------------------
+# Slider
+--------------------------------------------------------------*/
+.sliders {
+  padding: 80px 0;
+  background: url("../img/testimonials/bg1.jpg") no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+
+.sliders::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  /*background: rgba(0, 0, 0, 0.7); *//
+}
+
+.sliders .section-header {
+  margin-bottom: 40px;
+}
+
+.sliders .slider-item {
+  text-align: center;
+  color: #fff;
+}
+
+.sliders .slider-item .slider-img {
+  width: 100px;
+  border-radius: 50%;
+  border: 6px solid rgba(255, 255, 255, 0.15);
+  margin: 0 auto;
+}
+
+.sliders .slider-item h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0 5px 0;
+  color: #fff;
+}
+
+.sliders .slider-item h4 {
+  font-size: 14px;
+  color: #ddd;
+  margin: 0 0 15px 0;
+}
+
+.sliders .slider-item .quote-icon-left, .sliders .slider-item .quote-icon-right {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 26px;
+}
+
+.sliders .slider-item .quote-icon-left {
+  display: inline-block;
+  left: -5px;
+  position: relative;
+}
+
+.sliders .slider-item .quote-icon-right {
+  display: inline-block;
+  right: -5px;
+  position: relative;
+  top: 10px;
+}
+
+.sliders .slider-item p {
+  font-style: italic;
+  margin: 0 auto 15px auto;
+  color: #000;
+}
+
+.sliders .owl-nav, .sliders .owl-dots {
+  margin-top: 5px;
+  text-align: center;
+}
+
+.sliders .owl-dot {
+  display: inline-block;
+  margin: 0 5px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.4) !important;
+}
+
+.sliders .owl-dot.active {
+  background-color: #ffc451 !important;
+}
+
+@media (min-width: 1024px) {
+  .sliders {
+    background-attachment: fixed;
+  }
+}
+
+@media (min-width: 992px) {
+  .sliders .slider-item p {
+    width: 80%;
+  }
+}
+
+h6{
+
+      margin: 0;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 64px;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    text-shadow: 1px 0 0 #0070b9, 0 -1px 0 #0070b8, 0 1px 0 #0070b9, -1px 0 0 #0070bd;
 }
