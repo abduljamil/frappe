@@ -5,9 +5,6 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-<!-- <body style = "background: url(/assets/frappe/Gp/assets/img/hero-bg.jpg); background-size: 100% 100%;">
-
-</body> -->
   <title>PCW Health Care</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
@@ -30,7 +27,6 @@
 
   <!-- Template Main CSS File -->
   <link href="/assets/frappe/Gp/assets/css/style.css" rel="stylesheet">
-	<link href="/assets/frappe/Gp/assets/css/header.css" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: Gp - v2.2.1
@@ -43,43 +39,43 @@
 <body>
 
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top">
+  <header id="header" class="fixed-top ">
     <div class="container d-flex align-items-center justify-content-between">
-
-      <h1 class="logo"><a href="home3.html">PCW Health Care<span>.</span></a></h1>
+    <a href="index.html" class="logo"><img src="/assets/frappe/Gp/assets/img/logo.png" alt="" class="img-fluid"></a>
+      <h1 class="logo"><a href="index.html">PCW Health Care<span></span></a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo"><img src="/assets/frappe/Gp/assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
           <li class="active"><a href="index.html">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#portfolio">Products</a></li>
           <li><a href="#team">Team</a></li>
-          <li class="drop-down"><a href="">Drop Down</a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="drop-down"><a href="#">Deep Drop Down</a>
+          <li class="drop-down"><a href="#sliders">Distributor</a>
+            <!-- <ul>
+              <li class="drop-down"><a href="#">Region</a>
                 <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
+                  <li><a href="#">Central Zone 1</a></li>
+                  <li><a href="#">Central Zone 2</a></li>
+                  <li><a href="#">North Zone 1</a></li>
+                  <li><a href="#">North Zone 2</a></li>
+                  <li><a href="#">South Zone 1</a></li>
+                  <li><a href="#">South Zone 2</a></li>
                 </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-            </ul>
-          </li>
+                </ul>
+              </li> -->
+
           <li><a href="#contact">Contact</a></li>
 
         </ul>
       </nav><!-- .nav-menu -->
-
-      <a href="http://0.0.0.0:8000/login#login" class="get-started-btn scrollto">Login</a>
+	{% if frappe.session.user == 'Guest' %}
+      <a href="http://pcwhealthcare.com/login#login" class="get-started-btn scrollto">Login</a>
+  {% else %}
+  <a href="http://pcwhealthcare.com/app" class="get-started-btn scrollto">App</a>
+{% endif %}
 
     </div>
   </header><!-- End Header -->
