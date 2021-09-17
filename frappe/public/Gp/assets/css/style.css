@@ -659,11 +659,14 @@ section {
   text-align: center;
   border: 1px solid #ebebeb;
 /*  padding: 80px 20px;*/
-padding-right: 60px;
-padding-left: 60px;
-padding-top: 40px;
+/*padding-right: 120px;
+padding-left: 120px;
+padding-top: 40px;*/
   transition: all ease-in-out 0.3s;
   background: #fff;
+  width: 250px;
+  height: 250px;
+border-radius: 20px;
 }
 
 .customers .icon-box .icon {
@@ -675,8 +678,10 @@ padding-top: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 20px;
   margin-bottom: 20px;
   transition: 0.3s;
+
 }
 
 .customers .icon-box .icon i {
