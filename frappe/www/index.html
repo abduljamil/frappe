@@ -73,7 +73,7 @@
       </nav><!-- .nav-menu -->
 	{% if frappe.session.user == 'Guest' %}
       <a href="http://pcwhealthcare.com/login#login" class="get-started-btn scrollto">Login</a>
-  {% else if frappe.session.user != 'Guest' %}
+  {% else %}
   <a href="http://pcwhealthcare.com/app/home" class="get-started-btn scrollto">App</a>
 {% endif %}
 
