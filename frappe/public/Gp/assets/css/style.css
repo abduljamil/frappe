@@ -126,7 +126,6 @@ h1, h2, h3, h4, h5, h6 {
   background: rgba(0, 0, 0, 0.8);
   background: rgba(0, 112, 185, 0.84);
 }
-}
 
 #header .logo {
   font-size: 32px;
@@ -495,7 +494,7 @@ display: none;
 }
 
 #hero .icon-box {
-  padding: 30px 20px;
+  padding: 30px 12px;
   transition: ease-in-out 0.3s;
   border: 2px solid rgb(219, 227, 230);
   height: 100%;
