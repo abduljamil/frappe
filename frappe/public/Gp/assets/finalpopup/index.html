@@ -24,10 +24,10 @@
   <link href="/assets/frappe/Gp/assets/vendor/venobox/venobox.css" rel="stylesheet">
   <link href="/assets/frappe/Gp/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="/assets/frappe/Gp/assets/vendor/aos/aos.css" rel="stylesheet">
-  
+
   <!-- Template Main CSS File -->
   <link href="/assets/frappe/Gp/assets/css/style.css" rel="stylesheet">
-  <!-- <link rel="stylesheet" href="/assets/frappe/Gp/assets/finalpopup/popup.css"> -->
+  <link rel="stylesheet" href="/assets/frappe/Gp/assets/finalpopup/popup.css">
 
   <!-- =======================================================
   * Template Name: Gp - v2.2.1
@@ -35,76 +35,44 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
-  <style>
-    @import url(https://fonts.googleapis.com/css?family=Lato:100,400,900);
-    @import url(https://fonts.googleapis.com/css?family=Great+Vibes);
-
-    ::selection {
-      color: red;
-    }
-    ::-moz-selection {
-      color: red;
-    }
-
-    
-    .poster {
-      transform: scale(0.6);
-      transform-origin: top center;
-    }
-
-    .intro {
-      font-family: 'Great Vibes', cursive;
-      font-size: 65px;
-      margin-left: 445px;
-      color: #2e7bff;
-    }
-    .intro1 {
-      font-family: 'Great Vibes', cursive;
-      font-size: 65px;
-      margin-left: 350px;
-      color: #2e7bff;
-    }
-
-    .time {
-      font-family: 'Great Vibes', cursive;
-      font-weight: 900;
-      font-size: 63px;
-      color: #2e7bff;
-      margin-left: 110px;
-    }
-
-    #drawing_canvas {
-      position: absolute;
-      width: 512px;
-      height: 512px;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      margin: auto; /* Center the canvas */
-      pointer-events: none;
-    }
-  </style>
 </head>
 
 <body>
-  <div id="preloader">
+
+  <!-- ======= Preloader ======= -->
+
     <div class="poster">
-      <div class="intro1">
-        Happy 75th Anniversary
+
+      <div class="intro">
+
+          Happy 75th Anniversary
+
       </div>
 
-      
-      <img  src="/assets/frappe/Gp/assets/finalpopup/bg.png" alt="" style="height: 400px; width: 600px; margin-left: 308px; margin-bottom: -45px;">
-      
+
+      <img src="bg.png" alt="" style="height: 400px; width: 600px; margin-left: -100px; margin-bottom: -45px;">
+
+
       <div class="intro" style="font-size: 200px;">
-        2025
+
+          2025
+
       </div>
+
       <div class="time">
-        Celebrating 75 years of excellence in Healthcare!
+
+          Celebrating 75 years of excellence in Healthcare!
+
       </div>
-    </div>
+
+
+      <canvas id="drawing_canvas"></canvas>
+
+      <script src="header.js"></script>
+
   </div>
+
+  <!-- End Preloader -->
 
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top ">
