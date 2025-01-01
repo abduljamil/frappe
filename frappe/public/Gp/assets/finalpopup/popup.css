@@ -1,0 +1,51 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:100,400,900);
+@import url(https://fonts.googleapis.com/css?family=Great+Vibes);
+
+::selection {
+  color: red;
+}
+::-moz-selection {
+  color: red;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background: rgb(255, 255, 255);
+  color: white;
+  text-align: center;
+  margin: 0; /* Remove default margin */
+  height: 100vh; /* Full height */
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+.poster {
+  transform: scale(0.6);
+  transform-origin: top center;
+}
+
+.intro {
+  font-family: 'Great Vibes', cursive;
+  font-size: 65px;
+  color: #2e7bff;
+}
+
+.time {
+  font-family: 'Great Vibes', cursive;
+  font-weight: 900;
+  font-size: 63px;
+  color: #2e7bff;
+}
+
+#drawing_canvas {
+  position: absolute;
+  width: 512px;
+  height: 512px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto; /* Center the canvas */
+  pointer-events: none;
+}

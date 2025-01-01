@@ -74,7 +74,7 @@ h1, h2, h3, h4, h5, h6 {
   position: fixed;
   top: calc(50% - 0px);
   left: calc(50% - 30px);
-  border: 6px solid rgba(0, 112, 185, 0.84);
+  /* border: 6px solid rgba(0, 112, 185, 0.84); */
   /* #ffc451; */
   border-top-color: #ffffff;
   border-bottom-color: #ffffff;
